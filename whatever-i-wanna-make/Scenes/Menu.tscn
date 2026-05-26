@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://2nafvmqj4t6k"]
+
+[ext_resource type="Texture2D" uid="uid://cxb2227ko8i75" path="res://Pixel Art/NosePixelArt.png" id="1_6pedr"]
+[ext_resource type="Script" uid="uid://bo7va2nivkuym" path="res://Scripts/MenuButton.gd" id="2_s2c3o"]
+[ext_resource type="Texture2D" uid="uid://bobrlck0mhy2j" path="res://background-white-elegant-with-line-abstract-landscape_204950-477.webp" id="2_syfuq"]
+
+[node name="Node2D" type="Node2D" unique_id=2115246498]
+
+[node name="Node" type="Node" parent="." unique_id=1837983837]
+
+[node name="Nose" type="Sprite2D" parent="Node" unique_id=194192629]
+position = Vector2(924, 221)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose8" type="Sprite2D" parent="Node" unique_id=713278898]
+position = Vector2(641, 454)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose7" type="Sprite2D" parent="Node" unique_id=1470898040]
+position = Vector2(366, 451)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose6" type="Sprite2D" parent="Node" unique_id=398964110]
+position = Vector2(883, 368)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose5" type="Sprite2D" parent="Node" unique_id=149097817]
+position = Vector2(304, 136)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose4" type="Sprite2D" parent="Node" unique_id=810883360]
+position = Vector2(872, 139)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose2" type="Sprite2D" parent="Node" unique_id=1990043866]
+position = Vector2(207, 290)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose3" type="Sprite2D" parent="Node" unique_id=1772011276]
+position = Vector2(275, 404)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose9" type="Sprite2D" parent="Node" unique_id=651209726]
+position = Vector2(127, 159)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose10" type="Sprite2D" parent="Node" unique_id=914181108]
+position = Vector2(125, 473)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose11" type="Sprite2D" parent="Node" unique_id=2056546600]
+position = Vector2(952, 469)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose12" type="Sprite2D" parent="Node" unique_id=1682701956]
+position = Vector2(1040, 156)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose13" type="Sprite2D" parent="Node" unique_id=438080876]
+position = Vector2(933, 141)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose14" type="Sprite2D" parent="Node" unique_id=1942953968]
+position = Vector2(206, 145)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose15" type="Sprite2D" parent="Node" unique_id=738857707]
+position = Vector2(799, 499)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose16" type="Sprite2D" parent="Node" unique_id=1222439937]
+position = Vector2(504, 508)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose17" type="Sprite2D" parent="Node" unique_id=2013859150]
+position = Vector2(243, 499)
+texture = ExtResource("1_6pedr")
+
+[node name="Nose18" type="Sprite2D" parent="Node" unique_id=48065705]
+position = Vector2(1050, 380)
+texture = ExtResource("1_6pedr")
+
+[node name="BackgroundWhiteElegantWithLineAbstractLandscape204950477" type="Sprite2D" parent="." unique_id=1454548438]
+position = Vector2(575.25, 324)
+scale = Vector2(1.5587838, 0.8783784)
+texture = ExtResource("2_syfuq")
+
+[node name="Label" type="Label" parent="." unique_id=1884559762]
+offset_left = 400.0
+offset_top = 39.0
+offset_right = 758.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 52
+text = "NOSE CLICKER"
+
+[node name="Button" type="Button" parent="." unique_id=1174706158]
+offset_left = 428.0
+offset_top = 168.0
+offset_right = 730.0
+offset_bottom = 294.0
+theme_override_font_sizes/font_size = 60
+text = "PLAY"
+script = ExtResource("2_s2c3o")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

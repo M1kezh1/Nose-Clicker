@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dd5j1ualsxkf3"]
+
+[ext_resource type="Texture2D" uid="uid://cxb2227ko8i75" path="res://Pixel Art/NosePixelArt.png" id="1_886ig"]
+[ext_resource type="Script" uid="uid://cm0e1altucf3m" path="res://Scripts/NoseScript.gd" id="1_dlrhe"]
+[ext_resource type="AudioStream" uid="uid://yqoho1bwa2rv" path="res://u_u4pf5h7zip-click-345983.mp3" id="3_r4j35"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dlrhe"]
+radius = 118.0
+height = 284.0
+
+[node name="Node2D" type="Node2D" unique_id=1121979475]
+
+[node name="ClickCount" type="Label" parent="." unique_id=121781545]
+offset_left = 22.0
+offset_top = 16.0
+offset_right = 279.0
+offset_bottom = 126.0
+theme_override_constants/line_spacing = 3
+theme_override_font_sizes/font_size = 80
+text = "Noses:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=596990443]
+script = ExtResource("1_dlrhe")
+
+[node name="NoseImage" type="Sprite2D" parent="Area2D" unique_id=1061707352]
+texture = ExtResource("1_886ig")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1137796096]
+position = Vector2(-5, 3)
+shape = SubResource("CapsuleShape2D_dlrhe")
+
+[node name="ClickAudio" type="AudioStreamPlayer2D" parent="Area2D" unique_id=535822880]
+stream = ExtResource("3_r4j35")
+
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
